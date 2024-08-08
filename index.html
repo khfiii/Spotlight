@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spotlight</title>
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                cursor: none;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background: black;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                background-image: url(https://wallpapers.com/images/hd/i-love-you-background-dagd0i08jbi1pv7i.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: fixed;
+                mix-blend-mode: overlay;
+                z-index: 2;
+            }
+
+            .costum-cursor {
+                position: fixed;
+                z-index: 1;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background: radial-gradient(
+                   circle,
+                   gray 0%,
+                   black 100%
+                  );
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container"></div>
+        <div class="costum-cursor"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
